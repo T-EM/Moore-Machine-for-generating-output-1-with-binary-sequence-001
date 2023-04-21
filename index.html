@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en' xmlns:og="http://ogp.me/ns#">
+
+<head>
+    <meta property="og:title" content="Moore Machine" />
+    <meta property="og:description"
+        content="Program to constrct Moore Machine for generating output 1 if an input of binary sequence 1 is preceded with exactly two zero's." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url"
+        content="https://t-em.github.io/Moore-Machine-for-generating-output-1-with-binary-sequence-001/" />
+    <meta property="og:image"
+        content="https://t-em.github.io/Moore-Machine-for-generating-output-1-with-binary-sequence-001/icons8-engineering-dotted-96.png" />
+
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='E=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href='main.css' rel='stylesheet'>
+    <link href='gear-animate.css' rel='stylesheet'>
+    <link href='states.css' rel='stylesheet'>
+    <title>Moore Machine</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menubar">
+            <div class="menuheader" onclick="home()">CONTENT</div>
+            <div class="ps li">
+                <div class="a" onclick="proClick()">Problem Statement</div>
+            </div>
+            <div class="sol li">
+                <div class="a" onclick="solClick()">Solution</div>
+            </div>
+        </div>
+        <div class="content" id="content">
+            <div class="problemstate" id="pstatement">
+                <div class="con">
+                    Q. Program to constrct Moore Machine for
+                    generating output 1 if an input of binary sequence
+                    1 is preceded with exactly two zero's&nbsp?
+                </div>
+            </div>
+            <div class="title" id="lgstate">
+                <div class="heading">
+                    <p class="heading-M">M</p>
+                    <p class="gear-rotate"></p>
+                    <p class="gear-rotate-left"></p>
+                    <p class="heading-re">re&nbsp;Machine</p>
+                </div>
+            </div>
+            <div class="solution" id="solstate">
+                <div class="input-text">
+                    <input type="text" name="text" value="" placeholder="Enter the String" id="ipstring" />
+                    <div class="fun">
+                        <button onclick="solveString()">Start</button>
+                        <button onclick="clearString()">Clear</button>
+                        <!-- <label for="speed">Speed:</label> -->
+                        <select id="speed">
+                            <option value="1">Speed</option>
+                            <option value="1">Normal</option>
+                            <option value="2">Slow</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="moore-machine">
+                        <div class="states">
+                            <div class="arrow left">
+                                <div class="txt">Start</div>
+                                <div class="line"></div>
+                                <div class="point"></div>
+                            </div>
+                            <div id="q1" class="q1 badge">
+                                <sup>q</sup>1<sub>/<sub>^</sub></sub>
+                            </div>
+                            <div id="q5-com" class="col">
+                                <div id="q2" class="q2 badge">
+                                    <sup>q</sup>2<sub>/<sub>0</sub></sub>
+                                </div>
+                                <div id="q5" class="q5 badge">
+                                    <sup>q</sup>5<sub>/<sub>0</sub></sub>
+                                </div>
+                            </div>
+                            <div id="q3" class="q3 badge">
+                                <sup>q</sup>3<sub>/<sub>0</sub></sub>
+                            </div>
+                            <div id="q4" class="q4 badge">
+                                <sup>q</sup>4<sub>/<sub>1</sub></sub>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="moore-output" class="moore-output">OUTPUT</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="leader-line.min.js"></script>
+    <script src="solving.js"></script>
+    <script src="states.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
