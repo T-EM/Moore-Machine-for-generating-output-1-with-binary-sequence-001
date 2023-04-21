@@ -40,39 +40,37 @@
             </div>
             <div class="solution" id="solstate">
                 <div class="input-text">
-                    <!-- <input type="text" placeholder="Enter the String" id="ipstring" /> -->
-                    <input id="partitioned" type="text" maxlength="4" />
+                    <input type="text" placeholder="Enter the String" id="ipstring" />
+                    <div class="fun">
+                        <button>Start</button>
+                        <button>Clear</button>
+                    </div>
                 </div>
                 <div class="main">
                     <div class="moore-machine">
                         <div class="states">
                             <div class="arrow left">
+                                <div class="txt">Start</div>
                                 <div class="line"></div>
                                 <div class="point"></div>
                             </div>
-                            <div class="q1 badge">q1/^</div>
-                            <div class="arrow left">
-                                <div class="line"></div>
-                                <div class="point"></div>
+                            <div id="q1" class="q1 badge">
+                                <sup>q</sup>1<sub>/<sub>^</sub></sub>
                             </div>
                             <div class="col">
-                                <div class="q2 badge">q2/0</div>
-                                <div class="arrow down">
-                                    <div class="line"></div>
-                                    <div class="point"></div>
+                                <div id="q2" class="q2 badge">
+                                    <sup>q</sup>2<sub>/<sub>0</sub></sub>
                                 </div>
-                                <div class="q5 badge">q5/0</div>
+                                <div id="q5" class="q5 badge">
+                                    <sup>q</sup>5<sub>/<sub>0</sub></sub>
+                                </div>
                             </div>
-                            <div class="arrow left">
-                                <div class="line"></div>
-                                <div class="point"></div>
+                            <div id="q3" class="q3 badge">
+                                <sup>q</sup>3<sub>/<sub>0</sub></sub>
                             </div>
-                            <div class="q3 badge">q3/0</div>
-                            <div class="arrow left">
-                                <div class="line"></div>
-                                <div class="point"></div>
+                            <div id="q4" class="q4 badge">
+                                <sup>q</sup>4<sub>/<sub>1</sub></sub>
                             </div>
-                            <div class="q4 badge">q4/1</div>
                         </div>
                     </div>
                     <div class="moore-transition"></div>
@@ -80,6 +78,8 @@
             </div>
         </div>
     </div>
+    <script src="leader-line.min.js"></script>
+    <script src="states.js"></script>
     <script src="index.js"></script>
 </body>
 
