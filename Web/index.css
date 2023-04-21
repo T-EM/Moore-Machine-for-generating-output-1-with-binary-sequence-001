@@ -126,5 +126,31 @@ body {
 .solution .input-text {
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+}
+#ipstring {
+  padding: 10px;
+  font-size: 25px;
+}
+.fun {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+.fun button {
+  height: 100%;
+  width: 10%;
+}
+
+.main {
+  /* margin-top: 50px; */
+  margin-left: 30px;
+  height: 500px;
+}
+
+.moore-machine {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
