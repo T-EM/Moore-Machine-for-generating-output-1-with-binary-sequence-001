@@ -40,10 +40,16 @@
             </div>
             <div class="solution" id="solstate">
                 <div class="input-text">
-                    <input type="text" placeholder="Enter the String" id="ipstring" />
+                    <input type="text" name="text" value="" placeholder="Enter the String" id="ipstring" />
                     <div class="fun">
-                        <button>Start</button>
-                        <button>Clear</button>
+                        <button onclick="solveString()">Start</button>
+                        <button onclick="clearString()">Clear</button>
+                        <!-- <label for="speed">Speed:</label> -->
+                        <select id="speed">
+                            <option value="1">Speed</option>
+                            <option value="1">Normal</option>
+                            <option value="2">Slow</option>
+                        </select>
                     </div>
                 </div>
                 <div class="main">
@@ -57,7 +63,7 @@
                             <div id="q1" class="q1 badge">
                                 <sup>q</sup>1<sub>/<sub>^</sub></sub>
                             </div>
-                            <div class="col">
+                            <div id="q5-com" class="col">
                                 <div id="q2" class="q2 badge">
                                     <sup>q</sup>2<sub>/<sub>0</sub></sub>
                                 </div>
@@ -73,12 +79,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="moore-transition"></div>
+                    <div id="moore-output" class="moore-output">OUTPUT</div>
                 </div>
             </div>
         </div>
     </div>
     <script src="leader-line.min.js"></script>
+    <script src="solving.js"></script>
     <script src="states.js"></script>
     <script src="index.js"></script>
 </body>

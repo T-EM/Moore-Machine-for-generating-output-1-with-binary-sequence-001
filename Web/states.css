@@ -27,6 +27,7 @@
   border-radius: 50%;
   padding: 11px 10px 8px 6px;
   margin-top: 100px;
+  transition: 400ms ease-in-out;
 }
 
 .badge sup {
