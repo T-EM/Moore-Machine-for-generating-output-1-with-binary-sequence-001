@@ -77,10 +77,13 @@ body {
   color: #f6f6f6;
   display: block;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #fff;
+  border-bottom: solid #e9e581 1px;
+  border-top: solid #e9e581 1px;
 }
 
 .sidenav .closebtn {
@@ -206,6 +209,26 @@ body {
 #ipstring {
   padding: 10px;
   font-size: 25px;
+  background-color: transparent;
+  color: #e9e581;
+  border: none;
+  border-bottom: solid #f6f6f6;
+}
+.solution .input-text input:active,
+.solution .input-text input:focus {
+  border: none;
+  border-bottom: solid #f6f6f6;
+  background-color: transparent;
+  color: #e9e581;
+}
+.solution .input-text input::placeholder {
+  color: #e9e581;
+}
+.solution .input-text input::-moz-placeholder {
+  color: #e9e581;
+}
+.solution .input-text input::-webkit-input-placeholder {
+  color: #e9e581;
 }
 .fun {
   display: flex;
