@@ -278,6 +278,7 @@ body {
   /* margin: 0; */
   position: relative;
   padding: 20px;
+  border-right: solid 2px #e9e581;
   /* top: 50%;
   transform: translateY(-50%); */
 }
@@ -312,5 +313,10 @@ body {
   }
   .title .heading {
     font-size: 70px;
+  }
+  .moore-machine {
+    border-bottom: solid 2px #e9e581;
+    padding: 40px;
+    border-right: none;
   }
 }
