@@ -23,7 +23,14 @@
 
 <body>
     <div class="container">
-        <div class="menubar">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a onclick="home()">Content</a>
+            <a onclick="proClick()">Problem Statement</a>
+            <a onclick="solClick()">Solution</a>
+        </div>
+        <div class="overlayMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
+        <div class="menubar" id="menu">
             <div class="menuheader" onclick="home()">CONTENT</div>
             <div class="ps li">
                 <div class="a" onclick="proClick()">Problem Statement</div>
@@ -40,8 +47,8 @@
                     1 is preceded with exactly two zero's&nbsp?
                 </div>
             </div>
-            <div class="title" id="lgstate">
-                <div class="heading">
+            <div class="title">
+                <div class="heading" id="lgstate">
                     <p class="heading-M">M</p>
                     <p class="gear-rotate"></p>
                     <p class="gear-rotate-left"></p>
@@ -94,6 +101,7 @@
             </div>
         </div>
     </div>
+    <script src="anim-event.min.js"></script>
     <script src="leader-line.min.js"></script>
     <script src="solving.js"></script>
     <script src="states.js"></script>
