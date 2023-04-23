@@ -269,9 +269,14 @@ body {
 
 .main {
   /* margin-top: 50px; */
-  display: flex;
   margin-left: 30px;
-  height: 500px;
+  min-height: 500px;
+}
+
+.run-moore {
+  display: flex;
+  width: 100%;
+  height: auto;
 }
 
 .moore-machine {
@@ -293,6 +298,28 @@ body {
   overflow-wrap: break-word;
 }
 
+.transition-table {
+  color: #e9e581;
+  margin-top: 10px;
+}
+
+.transition-table table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  /* width: 100%; */
+}
+
+.transition-table td,
+.transition-table th {
+  border: 1px solid #e9e581;
+  text-align: center;
+  padding: 8px;
+}
+
+.transition-table tbody tr:nth-child(even) {
+  background-color: darkmagenta;
+}
+
 /* OverlayMenu */
 @media only screen and (max-width: 1200px) {
   .menubar {
@@ -301,7 +328,7 @@ body {
   .overlayMenu {
     display: unset;
   }
-  .main {
+  .run-moore {
     display: block;
   }
   .solution .input-text {
