@@ -316,9 +316,9 @@ body {
   padding: 8px;
 }
 
-.transition-table tbody tr:nth-child(even) {
+/* .transition-table tbody tr:nth-child(even) {
   background-color: darkmagenta;
-}
+} */
 
 /* OverlayMenu */
 @media only screen and (max-width: 1200px) {
