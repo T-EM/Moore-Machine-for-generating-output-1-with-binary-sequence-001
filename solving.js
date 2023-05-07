@@ -6,6 +6,8 @@ let q4 = document.getElementById("q4");
 let q5 = document.getElementById("q5");
 let moore_output = document.getElementById("moore-output");
 let setSpeed = document.getElementById("speed");
+let notify = document.getElementById("notify");
+let notifyContent = document.getElementById("notify-content");
 
 let q12;
 let q15;
@@ -40,11 +42,13 @@ let qt55 = document.getElementById("qt55");
 
 let totalString = "";
 let solvingSpeed = setSpeed.value;
+var acceptCount = 0;
 
 class MooreMachine {
   constructor(ip) {
     totalString = "";
     this.str = ip;
+    acceptCount = 0;
     this.q1();
   }
   q1() {
@@ -70,6 +74,23 @@ class MooreMachine {
         this.pop();
         this.q5();
       } else {
+        if (this.str.length == 0) {
+          if (acceptCount == 0) {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is rejected!";
+            notifyContent.style.backgroundColor = "red";
+          } else {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is accepted!";
+            notifyContent.style.backgroundColor = "aquamarine";
+          }
+          setTimeout(() => {
+            notify.style.transform = "translateY(0px)";
+            notify.style.visibility = "hidden";
+          }, 2500);
+        }
         return;
       }
     }, solvingSpeed * 1000);
@@ -105,6 +126,23 @@ class MooreMachine {
         this.pop();
         this.q5();
       } else {
+        if (this.str.length == 0) {
+          if (acceptCount == 0) {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is rejected!";
+            notifyContent.style.backgroundColor = "red";
+          } else {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is accepted!";
+            notifyContent.style.backgroundColor = "aquamarine";
+          }
+          setTimeout(() => {
+            notify.style.transform = "translateY(0px)";
+            notify.style.visibility = "hidden";
+          }, 2500);
+        }
         return;
       }
     }, solvingSpeed * 1000);
@@ -136,11 +174,29 @@ class MooreMachine {
         this.pop();
         this.q4();
       } else {
+        if (this.str.length == 0) {
+          if (acceptCount == 0) {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is rejected!";
+            notifyContent.style.backgroundColor = "red";
+          } else {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is accepted!";
+            notifyContent.style.backgroundColor = "aquamarine";
+          }
+          setTimeout(() => {
+            notify.style.transform = "translateY(0px)";
+            notify.style.visibility = "hidden";
+          }, 2500);
+        }
         return;
       }
     }, solvingSpeed * 1000);
   }
   q4() {
+    acceptCount += 1;
     q4.style.backgroundColor = "darkgreen";
     qt4.style.backgroundColor = "darkgreen";
     //   console.log("1");
@@ -168,6 +224,26 @@ class MooreMachine {
         this.pop();
         this.q5();
       } else {
+        acceptCount += 1;
+        // console.log(acceptCount);
+        if (this.str.length == 0) {
+          if (acceptCount == 0) {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is rejected!";
+            notifyContent.style.backgroundColor = "red";
+          } else {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is accepted!";
+            notifyContent.style.backgroundColor = "aquamarine";
+          }
+          setTimeout(() => {
+            notify.style.transform = "translateY(0px)";
+            notify.style.visibility = "hidden";
+          }, 2500);
+        }
+        // console.log("The string is accepted!");
         return;
       }
     }, solvingSpeed * 1000);
@@ -207,6 +283,23 @@ class MooreMachine {
         this.pop();
         this.q5();
       } else {
+        if (this.str.length == 0) {
+          if (acceptCount == 0) {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is rejected!";
+            notifyContent.style.backgroundColor = "red";
+          } else {
+            notify.style.visibility = "visible";
+            notify.style.transform = "translateY(150px)";
+            notifyContent.innerHTML = "The String is accepted!";
+            notifyContent.style.backgroundColor = "aquamarine";
+          }
+          setTimeout(() => {
+            notify.style.transform = "translateY(0px)";
+            notify.style.visibility = "hidden";
+          }, 2500);
+        }
         return;
       }
     }, solvingSpeed * 1000);

@@ -15,6 +15,26 @@ body {
   width: auto;
 }
 
+.notify {
+  visibility: hidden;
+  position: fixed;
+  top: -50px;
+  width:100%;
+  transition: all ease-in-out 300ms;
+  /* transform: translateY(150px); */
+  z-index: 999;
+}
+
+.notify .content {
+  padding: 10px;
+  color: black;
+  font-weight: 900;
+  font-size: larger;
+  background-color: aquamarine;
+  display: table;
+  margin: 0 auto;
+}
+
 .menubar {
   display: block;
   padding: 10px;
